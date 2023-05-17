@@ -106,6 +106,18 @@ if ('ondevicelight' in window) {
                             if (event.value < 50) {
                                 // Encender la linterna
                                 // Aquí debes escribir el código para encender la linterna de tu dispositivo
+                                btnEncender.addEventListener('click', function () {
+                                    // Encender la linterna
+                                    navigator.torch.enable()
+                                        .then(() => {
+                                            torchActive = true;
+                                            console.log('Linterna encendida');
+                                        })
+                                        .catch(error => {
+                                            console.error('No se pudo encender la linterna:', error);
+                                        });
+                                });
+
                             }
                         });
                     }
@@ -113,6 +125,7 @@ if ('ondevicelight' in window) {
                 .catch(console.error);
         } else {
             console.log('No se puede acceder al sensor de luz');
+            alert("No se puede acceder al sensor de luz")
         }
     });
 
@@ -120,9 +133,21 @@ if ('ondevicelight' in window) {
     btnApagar.addEventListener('click', function () {
         // Apagar la linterna
         // Aquí debes escribir el código para apagar la linterna de tu dispositivo
+        btnApagar.addEventListener('click', function () {
+            // Apagar la linterna
+            navigator.torch.disable()
+                .then(() => {
+                    torchActive = false;
+                    console.log('Linterna apagada');
+                })
+                .catch(error => {
+                    console.error('No se pudo apagar la linterna:', error);
+                });
+        });
     });
 } else {
     console.log('El dispositivo no es compatible con la API DeviceLightEvent');
+    alert("El dispositivo no es compatible con la API DeviceLightEvent")
 }
 
 
