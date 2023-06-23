@@ -7,9 +7,9 @@ function speak() {
         return text.includes(valor);
     });
     //Respuestas
-    var nombreIA = "Mi nombre es Valeria y me crearon para estar a tu lado y poder ayudarte en lo que necesites"
+    var nombreIA = "Mi nombre es Merly y me crearon para estar a tu lado y poder ayudarte en lo que necesites"
     var fue = "No entiendo lo que me quieres decir, aun estoy en desarrollo no logro entender muchas cosas"
-    //var respuestax = "Mi nombre es Valeria y me crearon para estar a tu lado y poder ayudarte en lo que necesites,No entiendo lo que me quieres decir, aun estoy en desarrollo no logro entender muchas cosas"
+    //var respuestax = "Mi nombre es Merly y me crearon para estar a tu lado y poder ayudarte en lo que necesites,No entiendo lo que me quieres decir, aun estoy en desarrollo no logro entender muchas cosas"
 
     if (valorEncontrado) {
         var speechSynthesis = window.speechSynthesis;
