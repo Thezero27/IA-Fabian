@@ -87,48 +87,6 @@ if (text === nomIA) {
  */
 
 
-//configuracion de linterna
-// Verificar si el navegador soporta la API DeviceLightEvent
-// Verificar si el navegador soporta la API Torch
-if ('torch' in navigator) {
-    const btnEncender = document.getElementById('btn-encender');
-    const btnApagar = document.getElementById('btn-apagar');
-    let torchActive = false;
-  
-    // Escuchar el evento click del botón "Encender"
-    btnEncender.addEventListener('click', function() {
-      // Encender la linterna
-      navigator.torch.enable()
-        .then(() => {
-          torchActive = true;
-          console.log('Linterna encendida');
-          alert('Linterna encendida');
-        })
-        .catch(error => {
-          console.error('No se pudo encender la linterna:', error);
-          alert('No se pudo encender la linterna:', error);
-        });
-    });
-  
-    // Escuchar el evento click del botón "Apagar"
-    btnApagar.addEventListener('click', function() {
-      // Apagar la linterna
-      navigator.torch.disable()
-        .then(() => {
-          torchActive = false;
-          console.log('Linterna apagada');
-          alert('Linterna apagada');
-        })
-        .catch(error => {
-          console.error('No se pudo apagar la linterna:', error);
-          alert('No se pudo apagar la linterna:', error);
-        });
-    });
-  } else {
-    console.log('El navegador no es compatible con la API Torch');
-    alert('El navegador no es compatible con la API Torch');
-  }
-  
 
 
 
