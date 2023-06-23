@@ -84,7 +84,18 @@ if (text === nomIA) {
         return voice;
     }
 }
-//Thezero para su Crush
+ */
+
+
+
+
+
+
+
+
+
+
+/* 
 function speak() {
     var text = document.getElementById("text-to-speech").value;
  
