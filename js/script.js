@@ -9,6 +9,7 @@ function speak() {
     //Respuestas
     var nombreIA = "Mi nombre es Shayla y me crearon para estar a tu lado y poder ayudarte en lo que necesites"
     var fue = "No entiendo lo que me quieres decir, aun estoy en desarrollo no logro entender muchas cosas"
+    var fgh = "Patrocinios"
     //NO SIRBE var respuestax = "Mi nombre es Merly y me crearon para estar a tu lado y poder ayudarte en lo que necesites,No entiendo lo que me quieres decir, aun estoy en desarrollo no logro entender muchas cosas"
 
     if (valorEncontrado) {
