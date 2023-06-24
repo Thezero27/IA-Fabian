@@ -38,7 +38,7 @@ function getFemaleVoice() {
 }
 
 
-
+//TE amo CRUSH
 
 /* 
 alert(text)
