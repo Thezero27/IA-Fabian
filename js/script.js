@@ -84,7 +84,7 @@ if (text === nomIA) {
         return voice;
     }
 }
-//Thezero para su Crush
+//Thezero para su Crush Merly
 function speak() {
     var text = document.getElementById("text-to-speech").value;
  
